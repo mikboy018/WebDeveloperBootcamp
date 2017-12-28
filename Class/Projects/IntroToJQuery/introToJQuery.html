@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Intro to jQuery</title>
-
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 <body>
 <h1>Intro to jQuery</h1>
@@ -14,7 +14,7 @@
 	<li>Sellect all 'a' tags inside of li's: $("li a")</li>
 </ul>
 
-<h3>Methods</h3>
+<h3 id="testAddClass">Methods</h3>
 <ul>
 	<li>val()</li>
 	<li>text()</li>
@@ -23,15 +23,30 @@
 	<li>addChar()</li>
 	<li>remove()</li>
 	<li>toggle()</li>
+	<li id="clickAble">click()</li>
+	<li><input id="pressAble" type="text" placeholder="keypress()"</li>
+	<li id="onAble">on()</li>
 </ul>
 
+<p>Fun with attributes:</p>
+<input id="colorPick" type="text" placeholder="This is being modified">
+<input id="checkBox" type="text" placeholder="this is changing too">
+<input id="textBox" type="text" placeholder="Not modified">
+
+<select>
+	<option>Option 1</option>
+	<option>Option 2</option>
+</select>
+
+<div id="animated">
 <h2>A list to modify</h2>
-<ul>
-	<li>Item 1</li>
-	<li>Item b</li>
-	<li>Item III</li>
-	<li>Item 2+2</li>
-</ul>
+	<ul>
+		<li>Item 1</li>
+		<li>Item b</li>
+		<li>Item III</li>
+		<li>Item 2+2</li>
+	</ul>
+</div>
 
 <h2>Another, similar list to modify</h2>
 <ul id="modList">
@@ -40,6 +55,9 @@
 	<li>Item III</li>
 	<li>Item 2+2</li>
 </ul>
+
+<p> This image is resized with jQuery </p>
+<img src="https://images.unsplash.com/photo-1504972516657-526efa0347c9?auto=format&fit=crop&w=934&q=80">
 
 <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
